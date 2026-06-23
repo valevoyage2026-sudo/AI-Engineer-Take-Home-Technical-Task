@@ -1,0 +1,3 @@
+ticket_id,customer_name,account_tier,subject,message
+101,Alice Smith, vip,Double billing issue,I was charged twice for my premium subscription today. Please refund.
+102,Bob Jones,standard,Cannot login,My password reset link isn't working and I keep getting a 403 error.

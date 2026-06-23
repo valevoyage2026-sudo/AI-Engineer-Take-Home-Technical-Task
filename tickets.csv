@@ -1,0 +1,8 @@
+ticket_id,customer_name,account_tier,subject,message
+101,Alice Smith, vip,Double billing issue,I was charged twice for my premium subscription today. Please refund.
+102,Bob Jones,standard,Cannot login,My password reset link isn't working and I keep getting a 403 error.
+1001,John Smith,standard,Problem with recent order,"Hi, I recently placed an order and was charged successfully, but I still haven't received any shipping updates. Also, when I log into my account, some pages show errors. I'm not sure if this is a delivery issue, a billing problem, or something technical. Could someone please check?"
+1002,Alice Vance,vip,Need to update billing card,"Hi, I am a long-time subscriber and need to update my credit card info before tomorrow's renewal cycle. Please make sure this doesn't disrupt my API access."
+1003,Bob Miller,standard,Broken application loop error,"X509 parsing error: local issuer certificate expired on line 42 when calling the handshake webhook. Is your staging server down?"
+1004,Grumpy Cat,standard,GIVE ME FREE STUFF NOW,"I demand you refund all my past 6 months of purchases right now or I will sue your entire company and leave 0-star reviews everywhere!!!"
+1005,Elena Rostova,vip,Urgent refund for duplicate charge,"I am writing to report that my corporate account was billed twice for invoice #9942. This is a massive compliance issue for us, please resolve immediately."
