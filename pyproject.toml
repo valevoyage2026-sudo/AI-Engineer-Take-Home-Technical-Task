@@ -1,0 +1,22 @@
+[project]
+name = "langraph"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "arxiv>=4.0.0",
+    "duckduckgo-search>=8.1.1",
+    "ipython>=9.14.1",
+    "langchain>=1.3.10",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.4.8",
+    "langchain-google-genai>=4.2.5",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.6",
+    "pandas>=3.0.3",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "requests>=2.33.1",
+    "rich>=15.0.0",
+]

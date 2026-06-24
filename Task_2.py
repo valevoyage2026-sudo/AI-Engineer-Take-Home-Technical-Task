@@ -4,7 +4,6 @@ from enum import Enum
 from logging import critical
 from multiprocessing import Condition
 from operator import add
-from this import s
 from typing import Annotated, List, Literal, Optional, TypedDict, cast
 
 import arxiv
