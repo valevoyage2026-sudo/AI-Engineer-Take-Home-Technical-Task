@@ -16,7 +16,8 @@ graph TD
     
     Critic --> END((END))
     Human --> END
-   ![Workflow Diagram](https://github.com/valevoyage2026-sudo/AI-Engineer-Take-Home-Technical-Task/blob/main/Data/Outputs/Batch_Loader.png)
+ ![Workflow Diagram 2](https://github.com/valevoyage2026-sudo/AI-Engineer-Take-Home-Technical-Task/blob/main/Data/Outputs/Tickets_Processor.png)
+   
 
 ## Node Reference Guide
 
@@ -128,8 +129,8 @@ for ticket in state.tickets:
     result = chat.invoke(ticket) 
     results.append(result)
 ```
+![Workflow Diagram](https://github.com/valevoyage2026-sudo/AI-Engineer-Take-Home-Technical-Task/blob/main/Data/Outputs/Batch_Loader.png)
 
-![Workflow Diagram 2](Bacth_Loader.png)
 
  ## Batch Processing Node Reference Guide (`Batch_load`)
 
