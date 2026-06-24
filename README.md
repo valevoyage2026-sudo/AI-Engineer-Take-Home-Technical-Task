@@ -104,20 +104,19 @@ The self-evaluation process forms the backbone of our system safety guardrails:
     Web-Based Human-in-the-Loop Gateway: Replace the blocking CLI input() functions inside Human_Review_Node with a Slack webhook or a lightweight React review dashboard to make manual interventions production-ready.
 
 
-## ## Subgraph Architecture & State Encapsulation
+ ## Subgraph Architecture & State Encapsulation
 
 To maintain clean separation of concerns, this engine utilizes a hierarchical **Parent-Child Subgraph design pattern**. Rather than building a single sprawling graph, the architecture isolates batch operations from single-ticket analysis.
-
-### ### Parent Graph (`Batch_load`)
+ ### Parent Graph (`Batch_load`)
 * **State Schema**: `batch_schema`
 * **Responsibilities**: Handles I/O operations, disk access (`pandas.read_csv` and `to_csv`), and manages the macro-collection of incoming requests.
 * **Nodes**: `load_tickets` $\rightarrow$ `process_ticket_csv` $\rightarrow$ `save_to_csv`.
 
-### ### Child Subgraph (`chat`)
+ ### Child Subgraph (`chat`)
 * **State Schema**: `Graph_Schema`
 * **Responsibilities**: Executes the core agentic runtime—running parallel classification chains, assessing metrics, triggering human CLI overrides, and running the QA Critic.
 
-### ### State Mapping & Data Flow
+### State Mapping & Data Flow
 When a batch execution begins, the parent graph ingests raw tabular rows and instantiates an array of isolated `Graph_Schema` objects. 
 
 The `process_ticket_csv` node acts as an execution gateway. It iterates through the collection, isolates the state scope, and invokes the `chat` subgraph for each ticket:
@@ -132,13 +131,13 @@ for ticket in state.tickets:
 
 ![Workflow Diagram 2](Task2.png)
 
-## ## Batch Processing Node Reference Guide (`Batch_load`)
+ ## Batch Processing Node Reference Guide (`Batch_load`)
 
 The parent graph (`Batch_load`) is completely isolated from LLM reasoning. Its single operational objective is file orchestrating—safely managing disk I/O, converting tabular data into valid Pydantic memory schemas, and stepping through your execution pipeline.
 
 ---
 
-### ### 1. `load_tickets`
+### 1. `load_tickets`
 * **Inputs**: Reads the source file path via `state.csv_path`.
 * **Outputs**: Extracts raw data and initializes the `tickets` list array.
 * **Functional Mechanics**: 
