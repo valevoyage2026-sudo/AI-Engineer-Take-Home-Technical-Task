@@ -16,7 +16,7 @@ graph TD
     
     Critic --> END((END))
     Human --> END
-   ![Workflow Diagram](Tickets_Processor.png)
+   ![Workflow Diagram](https://github.com/valevoyage2026-sudo/AI-Engineer-Take-Home-Technical-Task/blob/main/Data/Outputs/Batch_Loader.png)
 
 ## Node Reference Guide
 
