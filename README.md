@@ -16,7 +16,7 @@ graph TD
     
     Critic --> END((END))
     Human --> END
-   ![Workflow Diagram](Task1.png)
+   ![Workflow Diagram](Tickets_Processor.png)
 
 ## Node Reference Guide
 
@@ -129,7 +129,7 @@ for ticket in state.tickets:
     results.append(result)
 ```
 
-![Workflow Diagram 2](Task2.png)
+![Workflow Diagram 2](Bacth_Loader.png)
 
  ## Batch Processing Node Reference Guide (`Batch_load`)
 
